@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/finance_analytics/config.py
+src/finance_analytics.egg-info/PKG-INFO
+src/finance_analytics.egg-info/SOURCES.txt
+src/finance_analytics.egg-info/dependency_links.txt
+src/finance_analytics.egg-info/top_level.txt
+src/finance_analytics/universe/__init__.py
+src/finance_analytics/universe/etfs.py

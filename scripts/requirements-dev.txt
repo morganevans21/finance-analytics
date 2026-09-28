@@ -1,0 +1,31 @@
+# Development dependencies for the ETF Analytics Project
+# These are in addition to the base requirements in requirements.txt
+
+# Testing
+pytest>=7.0.0
+pytest-cov>=4.0.0
+pytest-xdist>=3.0.0  # For parallel test execution
+
+# Code quality and linting
+ruff>=0.1.0
+mypy>=1.0.0
+pre-commit>=3.0.0
+
+# Documentation
+sphinx>=6.0.0
+sphinx-rtd-theme>=1.0.0
+myst-parser>=2.0.0  # For Markdown support in Sphinx
+
+# Development tools
+ipykernel>=6.0.0  # For Jupyter notebook support
+jupyterlab>=4.0.0
+black>=23.0.0  # Code formatter
+isort>=5.0.0  # Import sorter
+
+# Optional: For advanced profiling and debugging
+memory_profiler>=0.6.0
+line_profiler>=4.0.0
+py-spy>=0.3.0  # Sampling profiler
+
+# Optional: For database migrations (if transitioning to Alembic)
+alembic>=1.13.0
