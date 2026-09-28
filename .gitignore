@@ -4,3 +4,9 @@ __pycache__/
 .ipynb_checkpoints/
 *.pyc
 analyse_data.py
+update_database.py
+CLAUDE.md
+.claude/
+prompt.md
+*.backup
+architecture.pptx

@@ -16,31 +16,6 @@ This project implements an end-to-end ETL (Extract, Transform, Load) pipeline fo
 
 The pipeline is designed for incremental updates, efficiently downloading only new or changed data while maintaining a complete historical record.
 
-## Architecture
-
-```mermaid
-flowchart TD
-    A[Market Data<br/>Yahoo Finance] --> B[Python Ingestion Layer]
-    B --> C{Data Processing}
-    C --> D[Raw OHLCV Data]
-    C --> E[Adjusted OHLC Data]
-    D --> F[Data Merging & Normalisation]
-    E --> F
-    F --> G[PostgreSQL Database<br/>prices table]
-    G --> H[Financial Analytics Engine]
-    H --> I[Streamlit Dashboard<br/>Visualisation & Analysis]
-    
-    style A fill:#f9f,stroke:#333
-    style B fill:#bbf,stroke:#333
-    style C fill:#bfb,stroke:#333
-    style D fill:#ff9,stroke:#333
-    style E fill:#9f9,stroke:#333
-    style F fill:#f9f,stroke:#333
-    style G fill:#bbf,stroke:#333
-    style H fill:#bfb,stroke:#333
-    style I fill:#ff9,stroke:#333
-```
-
 ## Key Features
 
 ### Data Pipeline
